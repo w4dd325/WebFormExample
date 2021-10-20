@@ -70,6 +70,7 @@
             <%--Push button to right--%>
         </div>
         <div class="col-md-4" align="center">
+            <br />
             <asp:Button ID="Button1" runat="server" Text="Reset Form" Width="300" Height="50px" Font-Bold="True" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" ForeColor="Black" OnClick="reset_Click" />
         </div>
         <div class="col-md-4" align="center">
