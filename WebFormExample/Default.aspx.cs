@@ -87,22 +87,5 @@ namespace WebFormExample
             DDChangeDate.SelectedDates.Clear();
 
         }
-
-        //protected void checkComplete(object sender, EventArgs e)
-        //{
-        //    //WORK IN PROGRESS - WORKS SO FAR
-        //    if (Mong_Account_Number != ""
-        //        && Mong_DD_Current_Date != "01/01/0001 00:00:00"
-        //        && Mong_DD_Change_Date != "01/01/0001 00:00:00")
-        //    {
-        //        Button1.Enabled = true;
-        //    }
-        //    else
-        //    {
-        //        Button1.Enabled = false;
-        //    }
-
-        //}
-
     }
 }
