@@ -7,14 +7,38 @@
         <p>Let's change stuff...</p>
     </div>
 
+
+<%--Stucture    
     <div class="row">
         <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>--%>
+
+        <div class="row">
+        <div class="col-md-4">
+            <%--<asp:Login ID="Login1" runat="server"></asp:Login>--%>
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+        </div>
+            
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+
             <h3>Change Type</h3>
             <asp:DropDownList ID="ChangeType" name="ChangeType" runat="server" Width="300px" Height="40px" Font-Size="Large">
                 <asp:ListItem Text="DD Change Date" Value="1"></asp:ListItem>
                 <asp:ListItem Text="DD Re-instate" Value="2"></asp:ListItem>
             </asp:DropDownList>
             <br />
+
             <h3>Product</h3>
             <asp:DropDownList ID="Product" name="Product" runat="server" Width="300px" Height="40px" Font-Size="Large">
                 <asp:ListItem Text="IPF" Value="1"></asp:ListItem>
@@ -22,11 +46,11 @@
                 <asp:ListItem Text="WTP" Value="3"></asp:ListItem>
             </asp:DropDownList>
             <br />
+
             <h3>Account Number</h3>
             <asp:TextBox ID="AccountNumber" name="AccountNumber" MaxLength="18" placeholder="2347655454" required="required" runat="server" Width="300px" Height="40px" Font-Size="Large"></asp:TextBox>
             <br />
         </div>
-
 
         <div class="col-md-4" align="center">
             <h3>DD Current Date</h3>
@@ -34,7 +58,6 @@
             <br />
             <br />
         </div>
-
 
         <div class="col-md-4" align="center">
             <h3>DD Change Date</h3>

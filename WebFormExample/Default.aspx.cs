@@ -23,6 +23,7 @@ namespace WebFormExample
 
         }
 
+
         //Disable < today date in date picker
         protected void Calendar1_DayRender(object sender, DayRenderEventArgs e)
         {
@@ -44,7 +45,6 @@ namespace WebFormExample
         }
 
 
-
         //Button event for sending form data to MongoDB
         protected void Mong_Click(object sender, EventArgs e)
         {
@@ -62,7 +62,8 @@ namespace WebFormExample
             Mong_DD_Change_Date = DDChangeDate.SelectedDate.ToString();
 
             //Build the document 
-            var document = new BsonDocument { { "Change_Type", Mong_Change_Type },
+            var document = new BsonDocument { { "TimeStamp", DateTime.Now },
+                                              { "Change_Type", Mong_Change_Type },
                                               { "Product", Mong_Product },
                                               { "Account_Number", Mong_Account_Number },
                                               { "DD_Current_Date", Mong_DD_Current_Date },
