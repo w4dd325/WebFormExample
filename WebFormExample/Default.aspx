@@ -8,7 +8,7 @@
     </div>
 
 
-<%--Stucture    
+    <%--Stucture    
     <div class="row">
         <div class="col-md-4">
         </div>
@@ -18,15 +18,18 @@
         </div>
     </div>--%>
 
-        <div class="row">
+    <div class="row">
         <div class="col-md-4">
             <%--<asp:Login ID="Login1" runat="server"></asp:Login>--%>
+            <h3>Name of Operator</h3>
+            <asp:TextBox ID="opName" name="opName" required="required" runat="server" Width="300px" Height="40px" Font-Size="Large" ></asp:TextBox>
+            <br />
         </div>
         <div class="col-md-4">
         </div>
         <div class="col-md-4">
         </div>
-            
+
     </div>
 
     <div class="row">
@@ -48,7 +51,7 @@
             <br />
 
             <h3>Account Number</h3>
-            <asp:TextBox ID="AccountNumber" name="AccountNumber" MaxLength="18" placeholder="2347655454" required="required" runat="server" Width="300px" Height="40px" Font-Size="Large"></asp:TextBox>
+            <asp:TextBox ID="AccountNumber" name="AccountNumber" MaxLength="18" placeholder="2347655454" required="required" runat="server" Width="300px" Height="40px" Font-Size="Large" ></asp:TextBox>
             <br />
         </div>
 
