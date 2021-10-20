@@ -57,6 +57,8 @@ namespace WebFormExample
         void Reset()
         {
             opName.Text = "";
+            ChangeType.SelectedIndex = 0;
+            Product.SelectedIndex = 0;
             AccountNumber.Text = "";
             DDCurDate.SelectedDates.Clear();
             DDChangeDate.SelectedDates.Clear();

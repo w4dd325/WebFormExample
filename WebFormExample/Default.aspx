@@ -27,6 +27,7 @@
 
             <h3>Change Type</h3>
             <asp:DropDownList ID="ChangeType" name="ChangeType" runat="server" Width="300px" Height="40px" Font-Size="Large">
+                <asp:ListItem Text="" Value="0"></asp:ListItem>
                 <asp:ListItem Text="DD Change Date" Value="1"></asp:ListItem>
                 <asp:ListItem Text="DD Re-instate" Value="2"></asp:ListItem>
             </asp:DropDownList>
@@ -34,6 +35,7 @@
 
             <h3>Product</h3>
             <asp:DropDownList ID="Product" name="Product" runat="server" Width="300px" Height="40px" Font-Size="Large">
+                <asp:ListItem Text="" Value="0"></asp:ListItem>
                 <asp:ListItem Text="IPF" Value="1"></asp:ListItem>
                 <asp:ListItem Text="Fixed Term" Value="2"></asp:ListItem>
                 <asp:ListItem Text="WTP" Value="3"></asp:ListItem>
