@@ -51,7 +51,12 @@
         </div>
         <div class="col-md-4" align="center">
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Submit Form" Width="300" Height="50px" Font-Bold="True" BackColor="#0066FF" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" ForeColor="Black" OnClick="Mong_Click"/>
+            <script type="text/javascript">
+                function conf() {
+                    alert("Form Submitted!");
+                }
+            </script>
+            <asp:Button ID="Button1" runat="server" Text="Submit Form" Width="300" Height="50px" Font-Bold="True" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" ForeColor="Black" OnClick="Mong_Click" OnClientClick="conf()" />
         </div>
     </div>
 </asp:Content>
