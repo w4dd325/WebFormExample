@@ -45,8 +45,17 @@ namespace WebFormExample
         }
 
 
-        //Button event for sending form data to MongoDB
-        protected void Mong_Click(object sender, EventArgs e)
+        protected void reset_Click(object sender, EventArgs e)
+        {
+            AccountNumber.Text = "";
+            DDCurDate.SelectedDates.Clear();
+            DDChangeDate.SelectedDates.Clear();
+        }
+
+
+
+            //Button event for sending form data to MongoDB
+            protected void Mong_Click(object sender, EventArgs e)
         {
             //Connect to the MongoDB
             var settings = MongoClientSettings.FromConnectionString("mongodb+srv://Wadders_88:46U78vxmt4oJH8Sm@mySampleDB.xcrwt.mongodb.net/mySampleDB?retryWrites=true&w=majority");
@@ -71,6 +80,12 @@ namespace WebFormExample
                                               };
             //insert the document
             collection.InsertOne(document);
+
+            //Clear the form on submit
+            AccountNumber.Text = "";
+            DDCurDate.SelectedDates.Clear();
+            DDChangeDate.SelectedDates.Clear();
+
         }
 
         //protected void checkComplete(object sender, EventArgs e)
