@@ -21,9 +21,6 @@
     <div class="row">
         <div class="col-md-4">
             <%--<asp:Login ID="Login1" runat="server"></asp:Login>--%>
-            <h3>Name of Operator</h3>
-            <asp:TextBox ID="opName" name="opName" required="required" runat="server" Width="300px" Height="40px" Font-Size="Large" ></asp:TextBox>
-            <br />
         </div>
         <div class="col-md-4">
         </div>
@@ -34,6 +31,10 @@
 
     <div class="row">
         <div class="col-md-4">
+
+            <h3>Name of Operator</h3>
+            <asp:TextBox ID="opName" name="opName" required="required" runat="server" Width="300px" Height="40px" Font-Size="Large"></asp:TextBox>
+            <br />
 
             <h3>Change Type</h3>
             <asp:DropDownList ID="ChangeType" name="ChangeType" runat="server" Width="300px" Height="40px" Font-Size="Large">
@@ -51,14 +52,18 @@
             <br />
 
             <h3>Account Number</h3>
-            <asp:TextBox ID="AccountNumber" name="AccountNumber" MaxLength="18" placeholder="2347655454" required="required" runat="server" Width="300px" Height="40px" Font-Size="Large" ></asp:TextBox>
+            <asp:TextBox ID="AccountNumber" name="AccountNumber" MaxLength="18" required="required" runat="server" Width="300px" Height="40px" Font-Size="Large"></asp:TextBox>
             <br />
         </div>
 
         <div class="col-md-4" align="center">
             <h3>DD Current Date</h3>
             <asp:Calendar ID="DDCurDate" name="DDCurDate" runat="server" Width="300px" Height="230px" required="required" OnDayRender="Calendar1_DayRender" FirstDayOfWeek="Monday" DayStyle-ForeColor="#0066FF" SelectedDayStyle-BackColor="Yellow" SelectedDayStyle-ForeColor="Black" Font-Size="Larger"></asp:Calendar>
+
             <br />
+            <br />
+            <br />
+            <asp:Button ID="Button3" runat="server" Text="Reset Form" Width="300" Height="50px" Font-Bold="True" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" ForeColor="Black" OnClick="Reset_Click" />
             <br />
         </div>
 
@@ -66,21 +71,22 @@
             <h3>DD Change Date</h3>
             <asp:Calendar ID="DDChangeDate" name="DDChangeDate" runat="server" Width="300px" Height="230px" required="required" OnDayRender="Calendar2_DayRender" FirstDayOfWeek="Monday" DayStyle-ForeColor="#0066FF" SelectedDayStyle-BackColor="Yellow" SelectedDayStyle-ForeColor="Black" Font-Size="Larger"></asp:Calendar>
 
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <%--Push button to right--%>
-        </div>
-        <div class="col-md-4" align="center">
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Reset Form" Width="300" Height="50px" Font-Bold="True" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" ForeColor="Black" OnClick="reset_Click" />
-        </div>
-        <div class="col-md-4" align="center">
+            <br />
             <br />
             <asp:Button ID="Button2" runat="server" Text="Submit Form" Width="300" Height="50px" Font-Bold="True" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" ForeColor="Black" OnClick="Mong_Click" />
+            <br />
+
         </div>
     </div>
+    <%--    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4" align="center">
+        </div>
+        <div class="col-md-4" align="center">
+        </div>
+    </div>--%>
 </asp:Content>
 
 
