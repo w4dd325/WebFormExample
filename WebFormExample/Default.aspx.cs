@@ -21,7 +21,6 @@ namespace WebFormExample
         public string Mong_DD_Current_Date = "";
         public string Mong_DD_Change_Date = "";
 
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
