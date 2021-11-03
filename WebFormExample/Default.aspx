@@ -22,7 +22,7 @@
         <div class="col-md-4">
 
             <h3>Name of Operator</h3>
-            <asp:TextBox ID="opName" name="opName" required="required" runat="server" Width="300px" Height="40px" Font-Size="Large" ></asp:TextBox>
+            <asp:TextBox ID="opName" name="opName" required="required" runat="server" Width="300px" Height="40px" Font-Size="Large" readonly="true"></asp:TextBox>
             <br />
 
             <h3>Change Type</h3>

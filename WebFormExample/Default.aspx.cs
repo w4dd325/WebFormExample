@@ -25,6 +25,7 @@ namespace WebFormExample
         protected void Page_Load(object sender, EventArgs e)
         {
             UserName = Environment.UserName;
+            opName.Text = UserName;
         }
         //
         //******************************************************************************************
