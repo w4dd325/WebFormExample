@@ -9,6 +9,7 @@ using MongoDB.Bson;
 
 namespace WebFormExample
 {
+    
     public partial class _Default : Page
     {
         //******************************************************************************************
@@ -20,10 +21,10 @@ namespace WebFormExample
         public string Mong_Account_Number = "";
         public string Mong_DD_Current_Date = "";
         public string Mong_DD_Change_Date = "";
-
+        public string UserName;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            UserName = Environment.UserName;
         }
         //
         //******************************************************************************************

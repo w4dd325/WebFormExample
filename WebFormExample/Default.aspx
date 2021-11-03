@@ -4,11 +4,11 @@
 
     <div class="jumbotron">
         <h1>DD Change Form</h1>
-        <p>Let's change stuff...</p>
+        <p>Welcome <%=UserName%> , let's change some stuff...</p>
     </div>
 
 
-    <%--Stucture    
+    <%--Stucture
     <div class="row">
         <div class="col-md-4">
         </div>
